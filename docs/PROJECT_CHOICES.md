@@ -6,6 +6,8 @@ Para atender aos requisitos do projeto, foi necessário adotar algumas soluçõe
 ## Modelagem de Dados
 Inicialmente, criei um arquivo .drawio para modelar o banco e ganhar tempo no desenvolvimento. No entanto, devido ao curto período disponível, não foi possível utilizá-lo. Mesmo assim, gerei um PNG e um arquivo .erd com a modelagem extraída da ferramenta DBeaver.
 
+![Diagrama de classes.png](Diagrama%20de%20classes.png)
+
 ## Popular a Base
 
 - **Estados**
