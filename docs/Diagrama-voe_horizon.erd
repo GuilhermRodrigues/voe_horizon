@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diagram version="1" name="Diagrama-voe_horizon">
+	<entities>
+		<data-source id="mysql8-18c7f190757-7b25e6a7671cf013">
+			<entity id="1" name="aeroporto" fq-name="voe_horizon.aeroporto">
+				<path name="voe_horizon"/>
+			</entity>
+			<entity id="2" name="cidade" fq-name="voe_horizon.cidade">
+				<path name="voe_horizon"/>
+			</entity>
+			<entity id="3" name="classe_voo" fq-name="voe_horizon.classe_voo">
+				<path name="voe_horizon"/>
+			</entity>
+			<entity id="4" name="compra_passagem" fq-name="voe_horizon.compra_passagem">
+				<path name="voe_horizon"/>
+			</entity>
+			<entity id="5" name="estado" fq-name="voe_horizon.estado">
+				<path name="voe_horizon"/>
+			</entity>
+			<entity id="6" name="etiqueta_bagagem" fq-name="voe_horizon.etiqueta_bagagem">
+				<path name="voe_horizon"/>
+			</entity>
+			<entity id="7" name="gestor" fq-name="voe_horizon.gestor">
+				<path name="voe_horizon"/>
+			</entity>
+			<entity id="8" name="passageiro" fq-name="voe_horizon.passageiro">
+				<path name="voe_horizon"/>
+			</entity>
+			<entity id="9" name="passagem" fq-name="voe_horizon.passagem">
+				<path name="voe_horizon"/>
+			</entity>
+			<entity id="10" name="pedido" fq-name="voe_horizon.pedido">
+				<path name="voe_horizon"/>
+			</entity>
+			<entity id="11" name="voo" fq-name="voe_horizon.voo">
+				<path name="voe_horizon"/>
+			</entity>
+			<entity id="12" name="voucher" fq-name="voe_horizon.voucher">
+				<path name="voe_horizon"/>
+			</entity>
+		</data-source>
+	</entities>
+	<relations>
+		<relation name="FKsevme5ini9b39q1nm90x99qfh" fq-name="voe_horizon.voo.FKsevme5ini9b39q1nm90x99qfh" type="fk" pk-ref="1" fk-ref="11"/>
+		<relation name="FKeu73jnyakkgqutigsgv9ysrbu" fq-name="voe_horizon.voo.FKeu73jnyakkgqutigsgv9ysrbu" type="fk" pk-ref="1" fk-ref="11"/>
+		<relation name="FKhv1yxhbmq8k2uykh34we5wwjx" fq-name="voe_horizon.aeroporto.FKhv1yxhbmq8k2uykh34we5wwjx" type="fk" pk-ref="2" fk-ref="1"/>
+		<relation name="FKi5heo4nti032l5nb6kd2o5dhu" fq-name="voe_horizon.passagem.FKi5heo4nti032l5nb6kd2o5dhu" type="fk" pk-ref="3" fk-ref="9"/>
+		<relation name="FKp2eff7abxpij6uf9pi98o2428" fq-name="voe_horizon.pedido.FKp2eff7abxpij6uf9pi98o2428" type="fk" pk-ref="3" fk-ref="10"/>
+		<relation name="FKkworrwk40xj58kevvh3evi500" fq-name="voe_horizon.cidade.FKkworrwk40xj58kevvh3evi500" type="fk" pk-ref="5" fk-ref="2"/>
+		<relation name="FKebde0l4nuqgru03ocnfvnw6ip" fq-name="voe_horizon.passagem.FKebde0l4nuqgru03ocnfvnw6ip" type="fk" pk-ref="8" fk-ref="9"/>
+		<relation name="FK9cv0o9a5bhyjentacs32t6nf9" fq-name="voe_horizon.pedido.FK9cv0o9a5bhyjentacs32t6nf9" type="fk" pk-ref="8" fk-ref="10"/>
+		<relation name="FKej56ttgt9g9e4sm0mnjqumpd9" fq-name="voe_horizon.compra_passagem.FKej56ttgt9g9e4sm0mnjqumpd9" type="fk" pk-ref="9" fk-ref="4"/>
+		<relation name="FKck2kihtvmvmfvoawcepl8xi7i" fq-name="voe_horizon.etiqueta_bagagem.FKck2kihtvmvmfvoawcepl8xi7i" type="fk" pk-ref="9" fk-ref="6"/>
+		<relation name="FKeg5e1em3yvxvpab36mg7atbdn" fq-name="voe_horizon.voucher.FKeg5e1em3yvxvpab36mg7atbdn" type="fk" pk-ref="9" fk-ref="12"/>
+		<relation name="FKj1t5i55pjsq2dri666vpbebug" fq-name="voe_horizon.compra_passagem.FKj1t5i55pjsq2dri666vpbebug" type="fk" pk-ref="10" fk-ref="4"/>
+		<relation name="FKlsgbhy4iqjcg1wjtg95kpsi00" fq-name="voe_horizon.passagem.FKlsgbhy4iqjcg1wjtg95kpsi00" type="fk" pk-ref="10" fk-ref="9"/>
+		<relation name="FK3fnnl8xfmq2gn2t7elg8rw15r" fq-name="voe_horizon.classe_voo.FK3fnnl8xfmq2gn2t7elg8rw15r" type="fk" pk-ref="11" fk-ref="3"/>
+	</relations>
+</diagram>
